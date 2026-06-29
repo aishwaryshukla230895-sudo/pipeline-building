@@ -16,16 +16,11 @@ This folder (`C:\Users\Gaming pc\Desktop\AI300\pipeline_building`) contains all 
 
 ---
 
-## ☁️ Phase 2: Provision Azure Workspace & Compute
-1. Open the [Azure Portal](https://portal.azure.com/) and click the **Cloud Shell** (`>_`) icon at the top right.
-2. Run these commands to clone the lab setup script and provision your workspace and compute cluster:
-   ```bash
-   rm -r mslearn-mlops -f
-   git clone https://github.com/MicrosoftLearning/mslearn-mlops.git mslearn-mlops
-   cd mslearn-mlops/infra
-   ./setup.sh
-   ```
-   *(Wait 5–10 minutes for provisioning to finish).*
+## ☁️ Phase 2: Provision Azure Workspace & Compute (SKIP IF REUSING)
+> [!TIP]
+> Since you already have the active resource group **`rg-ai300-lc9b35460640d4583af`** and workspace **`mlw-ai300-lc9b35460640d4583af`** created from your earlier lab, **you can completely skip this step and save 10 minutes!** Go directly to Phase 3.
+
+1. *(Only if starting from scratch)* Open the [Azure Portal](https://portal.azure.com/) Cloud Shell and run `./setup.sh`.
 
 ---
 
